@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,45 +21,48 @@
     }      
     
     img {
-        width: 60%;
-        /* HANDIG OM HIER BREEDTE IN % op te geven */
+       width: 10%;
     }
 
-    #title {
-     
+    #menu {
+      padding: 20px;
+      background-color: rgb(197, 197, 251);
+    }
+    
+    #menuitem {
+      padding: 5px;
+      font-size: 2REM; 
+      border: solid 3px grey;
+      background-color: rgb(238, 241, 206);  
     }
 
-    .menu {
-      height: 200px;
-      border: 10px solid;
-      background-color: rgb(238, 241, 206);
-        
-    }
 
-    @media screen and (max-width: 600px) {
-        
-      .menu {
-         height: 40px;
+    @media screen and (max-width: 600px) {     
+      #menuitem {
+        font-size: 1REM; 
+        border: solid 1px grey;
+        background-color: rgb(238, 241, 206);  
       }
+
     }
       
   </style>
 </head>
 
 <body>
-  <div> <!-- een div is een blokje waar je wat in kunt zetten, kun je ook stijl aan koppelen via een id--> 
-      <a class="menu" href="bakkerijProce.html">Home </a> 
-      <a class="menu" href="pagina2.html">over ons</a> 
-      <a class="menu" href="https://www.bakkerbart.nl/"> Onze andere Bakkerij </a>      
+    
+  <div id="menu"> 
+      <a id="menuitem" href="bakkerijProce.html">Home </a>
+      <a id="menuitem" href="pagina2.html">over ons </a>
+      <a id="menuitem" href="https://www.bakkerbart.nl/"> Onze andere Bakkerij </a>      
   </div>
-  
 
   <h2>Drinks & Food</h2>
 
   <ul>
-    <li>Coffee</li>
+    <li>Koffie</li>
     <li>Tea</li>
-    <li>Milk</li>
+    <li>Milk</li> 
     <li>Hot choco</li>
   </ul>  
 
@@ -70,7 +72,14 @@
     <li>Sandwiches </li>
     <li>Tosti's</li>
   </ol> 
+    Eerste video hieronder moet je zelf in je drive zetten.
+    <video width="400" controls>
+        <source src="verwijs hier naar een eigen video, die op jouw drive staat" type="video/mp4">
+          Your browser does not support HTML video.
+    </video>
       
+      <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
   
   <table >
       <tr>
@@ -83,18 +92,16 @@
          <img src="images/cookiemonstertaart.txt" alt="Cookiemonstertaart">
         </td>
         <td>cookiemonstertaart</td>
-        <td>vanaf â‚¬14,50</td>
+        <td>vanaf€14,50 per stuk</td>
       </tr>
       <tr>
         <td>	
-         <img src="images/verjaardagstaart.jpeg" alt="verjaardagstaart image niet gevonden">
+         <img src="images/verjaardagstaart.jpeg" alt="verjaardagstaart image niet gevonden>">
         </td>
         <td>verjaardagstaart de luxe</td>
         <td>vanaf â‚¬12,50</td>
       </tr>
     </table>
-
-
 
   <div id="onder">
       <a href="https://www.taartenmaken.nl/bestanden/caramel_shortbread.jpg"> weggooien is zonde </a> 
